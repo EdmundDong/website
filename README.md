@@ -1,3 +1,3 @@
-# [Personal Website](edmunddong.github.io)
+# [Personal Website](https://edmunddong.github.io)
 
 Mostly CSS
