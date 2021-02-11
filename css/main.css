@@ -143,7 +143,7 @@ h2 span {
     background-size: cover;
   }
   .container {
-    background-color: #00000066;
+    background-color: #00000099;
     padding: 5%;
     max-width: max-content;
   }
@@ -156,10 +156,6 @@ h2 span {
   }
   .links ul {
     flex-direction: column;
-  }
-  .links li {
-    padding-bottom: auto;
-    font-size: 4.5vw;
   }
   /* Links Animation */
   .links a:before {
@@ -179,5 +175,18 @@ h2 span {
   }
   #mobile {
     visibility: visible;
+  }
+}
+@media (min-width: 384px) and (max-width: 768px) {
+  .links li {
+    padding-bottom: auto;
+    font-size: 4.5vw;
+  }
+}
+/* Even smaller, what are you even doing? */
+@media (max-width: 384px) {
+  .links li {
+    padding-bottom: auto;
+    font-size: 6.5vw;
   }
 }
