@@ -9,8 +9,14 @@ Mostly CSS. Working to replace my [old site](https://sites.google.com/view/eedon
 
 ## Todo:
 
+- [ ] Move footer back to footer when screen size is big enough on mobile
 - [ ] Fix main.css, it's a mess
 - [ ] Get more feedback on website
+- [ ] Research font weights, accessibility, common practice. I like light fonts, but that might not mean the world does
+- [ ] Fix profile page and add as sub-page to index
+- [ ] Protfolio?
+    - [ ] Computer Science
+    - [ ] Engineering/Art stuff
 
 ## B64 Feedback: 
 
