@@ -2,5 +2,6 @@
 
 Mostly CSS
 
-Todo:
--idk, something, prolly
+##Todo:
+[ ] idk, something, prolly
+[ ] Fix main.css, it's a mess
