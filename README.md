@@ -4,8 +4,8 @@ Mostly CSS. Working to replace my [old site](https://sites.google.com/view/eedon
 
 ## New things I learned how to do:
 
-- How to work push github pages through domain registrar and external dns provider
 - Making my first personal site from scratch
+- How to work push github pages through domain registrar and external dns provider
 
 ## Todo:
 
