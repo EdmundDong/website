@@ -1,0 +1,108 @@
+html {
+  background: #000 url("../img/bg.jpg") center center fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  background: transparent;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.container {
+  background-color: #00000066;
+  width: auto;
+  padding: 2em;
+  margin-right: 0;
+}
+
+h1 {
+  line-height: 1;
+  font-size: 6em;
+}
+
+h2 {
+  color: #ffffffcc;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+h2 span {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #b5292b;
+  color: #fff;
+}
+
+.links {
+  margin-top: 35px;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li + li {
+  margin-left: 30px;
+}
+
+.links a {
+  display: block;
+  position: relative;
+  color: #ffffffb3;
+  font-size: 16px;
+}
+
+.links a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -4px;
+  left: 0;
+  background-color: #ec2c2f;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.links a:hover:before, .links li:hover > a:before {
+  width: 30px;
+  height: 2px;
+}
+
+.links a:hover, .links li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 3em;
+  line-height: 3em;
+}
+
+.footer span {
+  background-color: #00000040; 
+  color: #ffffffb3;
+  padding: 0.5em;
+}
+
+/* Mobile Navigation WIP */
+@media (max-width: 768px) {
+  #header.header-top {
+    height: 60px;
+  }
+  #header.header-top h1 {
+    font-size: 26px;
+  }
+}
