@@ -28,7 +28,8 @@ h2 {
 
 h2 span {
   padding-bottom: 4px;
-  border-bottom: 2px solid #b5292b;
+  font-weight: bold;
+  /* border-bottom: 2px solid #b5292b; */
   color: #fff;
 }
 
@@ -62,7 +63,6 @@ h2 span {
   position: absolute;
   width: 0;
   height: 0;
-  bottom: -4px;
   left: 0;
   background-color: #ec2c2f;
   transition: all 0.3s ease-in-out 0s;
@@ -95,6 +95,7 @@ h2 span {
 
 /* Desktop Scaling */
 @media (min-width: 768px) {
+  /* General Styling */
   html {
     background: #000 url("../img/bg.jpg") center center fixed;
     background-size: cover;
@@ -113,10 +114,16 @@ h2 span {
     margin-top: 20px;
     font-size: 24px;
   }
+  /* Links Animation */
+  .links a:before {
+    bottom: -4px;
+  }
+  /* Footer */
   .footer {
     height: 3em;
     line-height: 3em;
   }
+  /* Make things disappear */
   #mobilefooter {
     font-size: 1pt;
   }
@@ -130,6 +137,7 @@ h2 span {
 
 /* Mobile Scaling */
 @media (max-width: 768px) {
+  /* General Styling */
   html {
     background: #000 url("../img/bg.jpg") center center fixed;
     background-size: cover;
@@ -153,10 +161,16 @@ h2 span {
     padding-bottom: auto;
     font-size: 4.5vw;
   }
+  /* Links Animation */
+  .links a:before {
+    bottom: 0;
+  }
+  /* Footer */
   .footer {
     height: 3em;
     line-height: 3em;
   }
+  /* Make things disappear */
   #mobilefooter {
     font-size: 4.3vw;
   }
