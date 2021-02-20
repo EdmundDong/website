@@ -44,7 +44,7 @@ h2 span {
 .links a {
   display: block;
   position: relative;
-  color: #ffffffb3;
+  color: rgba(255, 255, 255, 0.702);
   font-size: 1em;
 }
 /* Links Animation */
@@ -73,8 +73,8 @@ h2 span {
   width: auto;
 }
 .footer a {
-  background-color: #00000040; 
-  color: #ffffffb3;
+  background-color: rgba(0, 0, 0, 0.251); 
+  color: rgba(255, 255, 255, 0.702);
   padding: 0.5em;
   text-decoration: none;
 }
@@ -92,7 +92,7 @@ h2 span {
     background-size: cover;
   }
   .container {
-    background-color: #00000066;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 2em;
     margin-right: 0;
     margin-bottom: 10vh;
@@ -101,7 +101,7 @@ h2 span {
     font-size: 6em;
   }
   h2 {
-    color: #ffffffcc;
+    color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
     font-size: 24px;
   }
@@ -139,7 +139,7 @@ h2 span {
     background-size: cover;
   }
   .container {
-    background-color: #00000099;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 5%;
     max-width: max-content;
   }
