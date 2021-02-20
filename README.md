@@ -33,3 +33,8 @@ aCBu
     - [ ] + Also a menu maybe? CV/Projects/About me even if it's just links to subsections of the same page
 
 I could do a mockup of the UX if you want
+
+## Testing Sites: 
+
+https://screenshots.page/
+https://www.browserling.com/
