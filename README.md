@@ -1,6 +1,6 @@
 # [Personal Website](https://edmunddong.github.io)
 
-Mostly CSS. Working to replace my [old site](https://sites.google.com/view/eedong/) since it needs some work.
+Created to replace my [old site](https://sites.google.com/view/eedong/) since it needed some work.
 
 ## New things I learned how to do:
 
@@ -9,12 +9,10 @@ Mostly CSS. Working to replace my [old site](https://sites.google.com/view/eedon
 
 ## Todo:
 
-- [ ] Move footer back to footer when screen size is big enough on mobile
-- [ ] Fix main.css, it's a mess
-- [ ] Get more feedback on website
+- [ ] Move footer back to footer on mobile
 - [ ] Research font weights, accessibility, common practice. I like light fonts, but that might not mean the world does
 - [ ] Fix profile page and add as sub-page to index
-- [ ] Protfolio?
+- [ ] Portfolio?
     - [ ] Computer Science
     - [ ] Engineering/Art stuff
 
