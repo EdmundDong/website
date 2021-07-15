@@ -1,4 +1,4 @@
-# [Personal Website](https://edmunddong.github.io)
+# Personal Website
 
 Created to replace my [old site](https://sites.google.com/view/eedong/) since it needed some work.
 
