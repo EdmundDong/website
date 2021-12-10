@@ -27,16 +27,14 @@ h2 span {
   padding: 1px;
   padding-bottom: 10px;
 }
+.nav-link:hover {
+  color: #B3B3B3;
+}
 .nav-link {
+  color: #fff;
   border-style: solid;
   border-color: rgb(0, 123, 255);
   border-radius: 1px;
-}
-a:hover {
-  color: #B3B3B3;
-}
-a {
-  color: #fff;
 }
 .details {
   background-color: rgb(24, 26, 27);
