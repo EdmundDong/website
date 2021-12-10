@@ -1,0 +1,201 @@
+/* General Styling */
+html {
+  height: 100vh;
+  /*overflow: hidden;*/
+}
+body {
+  padding: 3rem;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  background: transparent;
+  align-items: top;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.container {
+  width: auto;
+}
+h1 {
+  line-height: 1;
+}
+h2 {
+  line-height: 1.5;
+}
+h2 span {
+  padding-bottom: 4px;
+  font-weight: bold;
+  /* border-bottom: 2px solid #b5292b; */
+  color: #fff;
+}
+.details {
+  background-color: rgb(24, 26, 27);
+  padding: 1rem;
+}
+hr{
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+.links {
+  margin-top: 1.5em;
+}
+.links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.links li {
+  padding-right: 1em;
+  margin-right: auto;
+  width: auto;
+}
+.links a {
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.702);
+  font-size: 1em;
+}
+/* Links Animation */
+.links a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  background-color: #ec2c2f;
+  transition: all 0.3s ease-in-out 0s;
+}
+.links a:hover:before, .links li:hover > a:before {
+  width: 100%;
+  height: 2px;
+}
+.links a:hover, .links li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+}
+.footer a {
+  background-color: rgba(0, 0, 0, 0.251); 
+  color: rgba(255, 255, 255, 0.702);
+  padding: 0.5em;
+  text-decoration: none;
+}
+/* Desktop Scaling */
+@media (min-width: 1000px) {
+  /* Disable Tablet Styling */
+  #tablet {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* General Styling */
+  html {
+    background: #000 url("../img/bg.jpg") center center fixed;
+    background-size: cover;
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    /*margin-right: 0;
+    margin-bottom: 10vh;*/
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  /* Links Animation */
+  .links a:before {
+    bottom: -4px;
+  }
+  /* Footer */
+  .footer {
+    height: 3em;
+    line-height: 3em;
+  }
+  /* Enable desktop scaling, disable mobile scaling */
+  #mobilefooter {
+    font-size: 1pt;
+  }
+  #desktop {
+    display: initial;
+  }
+  #mobile {
+    display: none;
+  }
+}
+/* Tablet Scaling */
+@media (min-width: 768px) and (max-width: 1000px) {
+  #tablet {
+    display: initial;
+  }
+}
+/* Mobile Scaling */
+@media (max-width: 768px) {
+  /* General Styling */
+  html {
+    background: #000 url("../img/bg.jpg") center center fixed;
+    background-size: cover;
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5%;
+    max-width: max-content;
+  }
+  h1 {
+    font-size: 13vw;
+    padding-top: 0.3em;
+  }
+  h2 {
+    font-size: 4.8vw;
+  }
+  .links ul {
+    flex-direction: column;
+  }
+  /* Links Animation */
+  .links a:before {
+    bottom: 0;
+  }
+  /* Footer */
+  .footer {
+    height: 3em;
+    line-height: 3em;
+  }
+  /* Make things disappear */
+  #mobilefooter {
+    font-size: 4.3vw;
+  }
+  #desktop {
+    display: none;
+  }
+  #tablet {
+    display: none;
+  }
+  #mobile {
+    display: initial;
+  }
+}
+@media (min-width: 384px) and (max-width: 768px) {
+  .links li {
+    padding-bottom: auto;
+    font-size: 4.5vw;
+  }
+}
+/* Even smaller, what are you even doing? */
+@media (max-width: 384px) {
+  .links li {
+    padding-bottom: auto;
+    font-size: 6.5vw;
+  }
+}
