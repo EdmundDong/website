@@ -1,12 +1,7 @@
 /* General Styling */
-html {
-  height: 100vh;
-  /*overflow: hidden;*/
-}
 body {
   padding: 3rem;
   display: flex;
-  height: 100vh;
   position: relative;
   background: transparent;
   align-items: top;
