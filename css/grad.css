@@ -65,6 +65,9 @@ hr{
   color: rgba(255, 255, 255, 0.702);
   font-size: 1em;
 }
+.nopad {
+  padding: 0;
+}
 /* Links Animation */
 .links a:before {
   content: "";
@@ -109,7 +112,7 @@ hr{
     background: #000 url("../img/bg.jpg") center center fixed;
     background-size: cover;
   }
-  .container {
+  .darkbg {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2em;
     /*margin-right: 0;
@@ -156,7 +159,7 @@ hr{
     background: #000 url("../img/bg.jpg") center center fixed;
     background-size: cover;
   }
-  .container {
+  .darkbg {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5%;
     max-width: max-content;
