@@ -20,6 +20,18 @@ h2 span {
   /* border-bottom: 2px solid #b5292b; */
   color: #fff;
 }
+.nav-pills {
+  align-items: center;
+}
+.nav-item {
+  padding: 1px;
+  padding-bottom: 10px;
+}
+.nav-link {
+  border-style: solid;
+  border-color: rgb(0, 123, 255);
+  border-radius: 1px;
+}
 .details {
   background-color: rgb(24, 26, 27);
   padding: 1rem;
