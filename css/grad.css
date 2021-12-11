@@ -162,6 +162,9 @@ hr{
     background: #000 url("../img/bg.jpg") center center fixed;
     background-size: cover;
   }
+  body {
+    padding: 0;
+  }
   .darkbg {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5%;
@@ -201,6 +204,9 @@ hr{
   }
 }
 @media (min-width: 384px) and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
   .links li {
     padding-bottom: auto;
     font-size: 4.5vw;
@@ -208,6 +214,9 @@ hr{
 }
 /* Even smaller, what are you even doing? */
 @media (max-width: 384px) {
+  body {
+    padding: 0;
+  }
   .links li {
     padding-bottom: auto;
     font-size: 6.5vw;
