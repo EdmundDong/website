@@ -20,6 +20,9 @@ h2 span {
   /* border-bottom: 2px solid #b5292b; */
   color: #fff;
 }
+h3, h4 {
+  font-weight: bold;
+}
 .nav-pills {
   align-items: center;
 }
