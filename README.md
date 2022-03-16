@@ -1,11 +1,12 @@
 # Personal Website
 
 Created to replace my [old site](https://sites.google.com/view/eedong/) since it needed some work.
+Page is setup to cache through Cloudflare. Clear cache [here](https://dash.cloudflare.com/caching/configuration) when updating page.
 
 ## New things I learned how to do:
 
 - Making my first personal site from scratch
-- How to work push github pages through domain registrar and external dns provider
+- How to work push github pages through domain registrar and external DNS provider
 
 ## Todo:
 
