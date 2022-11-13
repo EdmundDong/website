@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta Tags -->
+  <title>Edmund Dong is Graduating!</title>
+  <meta name="title" content="Edmund Dong is Graduating!">
+  <meta name="description" content="I'll be graduting from Arizona State University in December 2022!">
+  <meta name="keywords" content="computer, computer science, honors, graduate, masters, ms, mentor, student, arizona, tempe"> <!-- < 10 is a good limit-->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eedong.dev/grad">
+  <meta property="og:title" content="Edmund Dong is Graduating!">
+  <meta property="og:description" content="I'll be graduting from Arizona State University in December 2022!">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:image" content="https://github.com/EdmundDong/website/raw/master/img/meta-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Edmund Dong is Graduating!">
+  <meta name="twitter:description" content="I'll be graduting from Arizona State University in December 2022!">
+  <meta name="twitter:image" content="https://github.com/EdmundDong/website/raw/master/img/meta-image.jpg">
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="../css/grad.css" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<!-- Background image is ported in grad.css -->
+<body>
+  <div class="container darkbg">
+    <h1>Edmund Dong is Graduating!</h1>
+    <div class="details">
+      <h3>There are 3 different events where you can catch me walking across a stage.</h3>
+      <p>
+        Hopefully one of them will fit your schedule if you wish to attend. Thank you for your support.<br>
+        Please don't feel pressured to attend or watch, I appreciate your thoughts regardless <3.<br>
+      </p>
+      <p>
+        If you want to get in touch and catch up, please reach out however you'd like.<br>
+        Don't know how to contact me? Shoot me an email at <a href="mailto:grad@eedong.dev">grad@eedong.dev</a> or leave a message in the form at the bottom of this page!
+      </p>
+      <hr>
+      <h4>Degree Information and Future Plans</h4>
+      <p>
+        I graduated with a B.S. in Computer Science last December and will graduate with a M.S. in computer science this semester.<br>
+        I'll be working at Microchip in Chandler, AZ doing software engineering in 2023.
+      </p>
+      <hr>
+      <h4>Graduation Events Information</h4>
+      <div class="container">
+        <div class="row nopad gx-5">
+          <div class="col nopad">
+            <p>
+              Everything will also be streamed online during the listed ceremony times.<br>
+              Click on the title for each event to see in-person attendance information.
+            </p>
+            <p>Tickets are not required to attend any of these convocations in-person.</p>
+            <h5 id="asian"><a href="javascript:;">Asian/Asian Pacific American Convocation (Small)</a></h5>
+            <p>
+              Saturday, December 10, 2022 at 10:30 AM — Student Pavilion<br>
+              Live Stream Link: <a href="https://video.ibm.com/channel/KL4H9KRPaR8" target="_blank">https://video.ibm.com/channel/KL4H9KRPaR8</a>
+            </p>
+            <h5 id="grad"><a href="javascript:;">Graduate Commencement (Large) <span style="font-size: 10pt;">*the big one*</span></a></h5>
+            <p>
+              Monday, December 12, 2022 at 9:00 AM — Desert Financial Arena<br>
+              Live Stream Link: <a href="https://asunow.asu.edu/asulive" target="_blank">https://asunow.asu.edu/asulive</a>
+            </p>
+            <h5 id="fulton"><a href="javascript:;">Fulton Convocation (Large)</a></h5>
+            <p>
+              Thursday, December 15, 2022 at 2:30 PM — Sun Devil Stadium<br>
+              Live Stream Link: <a href="https://asunow.asu.edu/asulive" target="_blank">https://asunow.asu.edu/asulive</a>
+            </p>
+          </div>
+          <div class="col" style="text-align: center;">
+            <img class="img-responsive" src="../img/me.jpg" style="border-radius: 10%; max-height: 81%; max-width: 100%;">
+          </div>
+          <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+          <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shro1PS2VxAdDErmE?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="810" style="background: transparent; border: 1px solid #ccc; filter: invert(100%);"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="desktop" class="footer position-fixed"><a href="https://youtu.be/34otvaNEcrc">This background photo was taken by me</a></footer>
+  <div id="modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="eventname" class="modal-title">Grabbing event details...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <h5 id="datetimeloc">Loading date, time, location...</h5>
+              <h6>Live Stream Link: <a id="streamlink" href="javascript:;" target="_blank">Loading...</a></h6>
+              <p>Address: <a id="address" href="javascript:;" target="_blank">Loading...</a></p>
+              <p>Doors Open: <span id="doorstime">Loading...</span></p>
+              <p>Start Time: <span id="starttime">Loading...</span></p>
+              <p>Parking: Prepare for heavy traffic coming to and around the venue. Regular fees may be collected at meters and visitor lots. </p>
+              <p>Venue Policies: Guests will go through security, including a bag check, when entering the venue. Please plan for lines at the security check. Venue will adhere to the <a href="https://asu365communityunion.com/visitor-info/asu-bag-policy">Clear Bag Policy</a>.</p>
+              <p><a href="https://graduation.asu.edu/ceremonies/faq">ASU Convocation FAQ</a></p>
+            </div>
+            <div class="row">
+              <iframe id="map" src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script>
+    const modal = new bootstrap.Modal('.modal')
+    
+    const btnAsian = document.getElementById("asian");
+    const btnGrad = document.getElementById("grad");
+    const btnFulton = document.getElementById("fulton");
+
+    btnAsian.addEventListener('click', event => {
+      console.log('Click asian')
+      window.history.pushState('', '', '#asian');
+      document.getElementById('eventname').textContent = 'Asian/Asian Pacific American Convocation (Small)'
+      document.getElementById("datetimeloc").textContent = 'Saturday, December 10, 2022 at 10:30 AM — Student Pavilion'
+      document.getElementById("streamlink").textContent = document.getElementById("streamlink").href = 'https://video.ibm.com/channel/KL4H9KRPaR8'
+      document.getElementById("address").textContent = '400 E Orange St., Tempe, AZ 85287'
+      document.getElementById("address").href = 'http://maps.google.com/?q=Student Pavilion 400 E Orange St., Tempe, AZ 85287'
+      document.getElementById("doorstime").textContent = '1:30 PM'
+      document.getElementById("starttime").textContent = '2:30 PM'
+      document.getElementById('map').setAttribute('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.179887813583!2d-111.93589208480148!3d33.41855418078301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08dc9ab5305f%3A0x64654cdb439ffce3!2sStudent%20Pavilion!5e0!3m2!1sen!2sus!4v1668300234154!5m2!1sen!2sus')
+      modal.show()
+    })
+    
+    btnGrad.addEventListener('click', event => {
+      console.log('Click grad')
+      window.history.pushState('', '', '#grad');
+      document.getElementById('eventname').textContent = 'Graduate Commencement (Large) *the big one*'
+      document.getElementById("datetimeloc").textContent = 'Monday, December 12, 2022 at 9:00 AM — Desert Financial Arena'
+      document.getElementById("streamlink").textContent = document.getElementById("streamlink").href = 'https://asunow.asu.edu/asulive'
+      document.getElementById("address").textContent = '600 E Veterans Way, Tempe, AZ 85281'
+      document.getElementById("address").href = 'http://maps.google.com/?q=Desert Financial Arena 600 E Veterans Way, Tempe, AZ 85281'
+      document.getElementById("doorstime").textContent = '7:30 AM'
+      document.getElementById("starttime").textContent = '9:00 AM'
+      document.getElementById('map').setAttribute('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1665.0112084762645!2d-111.93033413370966!3d33.42265991460892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08de6548965f%3A0x3e7ce6e99967fb47!2sDesert%20Financial%20Arena!5e0!3m2!1sen!2sus!4v1668300585723!5m2!1sen!2sus')
+      modal.show()
+    })
+    
+    btnFulton.addEventListener('click', event => {
+      console.log('Click fulton')
+      window.history.pushState('', '', '#fulton');
+      document.getElementById('eventname').textContent = 'Fulton Convocation (Large)'
+      document.getElementById("datetimeloc").textContent = 'Thursday, December 15, 2022 at 2:30 PM — Sun Devil Stadium'
+      document.getElementById("streamlink").textContent = document.getElementById("streamlink").href = 'https://asunow.asu.edu/asulive'
+      document.getElementById("address").textContent = '500 E Veterans Way, Tempe, AZ 85287'
+      document.getElementById("address").href = 'http://maps.google.com/?q=Sun Devil Football Stadium 500 E Veterans Way, Tempe, AZ 85287'
+      document.getElementById("doorstime").textContent = '1:00 PM'
+      document.getElementById("starttime").textContent = '2:30 PM'
+      document.getElementById('map').setAttribute('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.914975357987!2d-111.93460608480132!3d33.425460980781125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08e3fb141cd1%3A0xd8b1d646f232522!2sSun%20Devil%20Football%20Stadium!5e0!3m2!1sen!2sus!4v1668300643470!5m2!1sen!2sus')
+      modal.show()
+    })
+    
+    switch(window.location.hash) {
+      case '#asian':
+        console.log('Loading modal')
+        btnAsian.click()
+        break;
+      case '#grad':
+      console.log('Loading modal')
+      btnGrad.click()
+        break;
+      case '#fulton':
+      console.log('Loading modal')
+      btnFulton.click()
+    }
+
+    document.getElementById("modal").addEventListener('hidden.bs.modal', event => {
+      console.log('Close modal')
+      document.getElementById('map').setAttribute('src', '')
+      window.history.pushState('', '', '#');
+    })
+  </script>
+</body>
+</html>
+
+
+
