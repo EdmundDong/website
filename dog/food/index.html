@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Meta Tags -->
+  <title>Dog Food Calculator</title>
+  <meta name="robots" content="noindex" />
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-xxl pt-3">
+    <div class="row">
+      <div class="col">
+        <h1>Dog Food Calculator!</h1>
+      </div>
+      <div class="col">
+        <div class="input-group">
+          <span class="input-group-text">Dog Size Range (lbs)</span>
+          <input type="number" aria-label="Dog size lower range" class="form-control" value="3">
+          <input type="number" aria-label="Dog size higher range" class="form-control" value="12">
+        </div>
+      </div>
+      <div class="col">
+        <div class="input-group">
+          <span class="input-group-text">Feeding Amount Range (cups)</span>
+          <input type="number" aria-label="Feed amount lower range" class="form-control" value="0.5" step="0.1">
+          <input type="number" aria-label="Feed amount higher range" class="form-control" value="1" step="0.1">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col chiwas">
+        <h2>
+          Smol
+        </h2>
+        <h4></h4>
+      </div>
+      <div class="col kid">
+        <h2>
+          Big
+        </h2>
+        <h4></h4>
+      </div>
+      <div class="col both">
+        <h2>
+          Both
+        </h2>
+        <h4></h4>
+      </div>
+    </div>
+  </div>
+  <script>
+    let feedingQuantity = [{ weight: 3, feed: 0.5 }, { weight: 12, feed: 1 }]
+    const dogWeight = { chiwas: 5.6, kid: 10.6 }
+    const units = { weight: 'lbs', feed: 'cups' }
+
+    dogWeight.both = Object.values(dogWeight).reduce((accum, weight) => accum + weight, 0)
+
+    function calcFeed() {
+      for (const [dog, weight] of Object.entries(dogWeight)) {
+        const feedRatio = (weight - feedingQuantity[0].weight) / (feedingQuantity[1].weight - feedingQuantity[0].weight)
+        const feed = feedRatio * (feedingQuantity[1].feed - feedingQuantity[0].feed) + feedingQuantity[0].feed
+        document.querySelector(`.${dog} h4`).innerHTML = `Weight: ${weight} ${units.weight}</br>Feed: ${feed.toFixed(2)} ${units.feed}`
+      }
+    }
+
+    calcFeed()
+
+    document.querySelectorAll('input').forEach((element) => element.addEventListener('change', () => {
+      console.log('Recalculating')
+      feedingQuantity = [{
+        weight: parseFloat(document.querySelector('[aria-label="Dog size lower range"]').value),
+        feed: parseFloat(document.querySelector('[aria-label="Feed amount lower range"]').value)
+      }, {
+        weight: parseFloat(document.querySelector('[aria-label="Dog size higher range"]').value),
+        feed: parseFloat(document.querySelector('[aria-label="Feed amount higher range"]').value)
+      }]
+      console.log(feedingQuantity)
+      calcFeed()
+    }))
+  </script>
+</body>
+
+</html>
